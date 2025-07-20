@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>btvn.html</title>
+  <style>
+    /* Cho danh sách menu hiển thị theo chiều ngang */
+    ul.danhsach {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+    ul.danhsach li {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <h1>BLOG CỦA HIUS</h1>
+  <ul class="danhsach">
+    <li><a href="#gioithieu">Giới thiệu</a></li>
+    <li><a href="#sothich">Sở thích</a></li>
+    <li><a href="#kinang">Kĩ năng</a></li>
+    <li><a href="#lienhe">Liên hệ</a></li>
+  </ul>
+
+  <div id="gioithieu">
+    <h2>Giới thiệu</h2>
+    <h3>NGUYỄN BÁ HIẾU</h3>
+    <img src="avt.jpg" alt="avt" />
+    <p>
+      Tôi tên là Nguyễn Bá Hiếu, 18 tuổi, hiện đang sinh sống tại Ba Vì, Hà Nội.
+      Tôi là sinh viên của Trường Đại học Công nghiệp Hà Nội, với định hướng trở
+      thành một kỹ sư phần mềm trong tương lai. Tôi yêu thích công nghệ, đặc
+      biệt là lập trình C++ và thiết kế giao diện người dùng.
+    </p>
+  </div>
+
+  <div id="sothich">
+    <h2>Sở thích</h2>
+    <ul>
+      <li>Chơi game</li>
+      <li>Chơi thể thao</li>
+      <li>Xem phim</li>
+    </ul>
+
+    <h2>Kĩ năng</h2>
+  </div>
+
+  <div id="kinang">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Kĩ năng</th>
+          <th>Mức độ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Tốt</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Tốt</td>
+        </tr>
+        <tr>
+          <td>JS</td>
+          <td>Tốt</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="lienhe">
+    <h2>Liên hệ</h2>
+    <form>
+      <label for="hoten"><b>Họ tên</b></label><br />
+      <input type="text" id="hoten" name="hoten" /><br /><br />
+
+      <label for="email"><b>Email</b></label><br />
+      <input type="text" id="email" name="email" /><br /><br />
+
+      <label for="ghichu"><b>Ghi chú</b></label><br />
+      <textarea name="ghichu" id="ghichu" rows="5"></textarea><br /><br />
+
+      <input type="submit" value="Gửi" />
+    </form>
+  </div>
+</body>
+</html>
